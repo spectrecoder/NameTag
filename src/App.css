@@ -1,0 +1,1189 @@
+@font-face {
+  font-family: "friz-quadrata-std-bold-587034a220f9f";
+  src: local("friz-quadrata-std-bold-587034a220f9f"),
+    url(./fonts/friz-quadrata-std-bold-587034a220f9f.otf) format("otf");
+}
+
+@import url("https://fonts.cdnfonts.com/css/friz-quadrata-std");
+
+a {
+  text-decoration: none !important;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin-bottom: 0 !important;
+}
+.flex {
+  display: flex;
+}
+.loading{
+  margin: auto;
+}
+#load_div {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background: grey;
+  opacity: 0.5;
+}
+/* .img_modal .modal-content{
+  border: none ;
+  background-color: transparent ;
+} */
+.loading_disable{
+  display: none !important;
+}
+/* Here is navbar style */
+.navbar {
+  width: 100%;
+  height: 90px;
+  background-color: black;
+  opacity: 0.8;
+  top: 0;
+  position: fixed !important;
+  z-index: 100;
+  padding: 0 !important;
+  border-bottom: 2px solid #b2966e;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: "friz-quadrata-std-bold-587034a220f9f";
+  color: #b2966e;
+  font-size: 25px;
+  margin: 0 25px 0 25px;
+}
+
+.navbar-logo {
+  margin-left: 30px;
+}
+.navbar-logo  img{
+  width: 200px;
+}
+
+.navbar-center {
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.wallet-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.wallet {
+  background-image: url("./img/connectwalletbutton.png");
+  height: 64px;
+  width: 184px;
+}
+.wallet p{
+  margin: 0px;
+  line-height: initial;
+  text-align: center;
+  padding: 0px;
+}
+.wallet .wallet_connect{
+  font-size: 15px;
+  padding-top: 8px;
+}
+
+/* Here is home style */
+.home {
+  background-image: url("./img/mintbackground.png");
+  width: 100%;
+  height: 920px;
+}
+
+.board {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 150px;
+}
+
+.left {
+  position: relative;
+  top: 30px;
+}
+
+.right {
+  position: relative;
+  top: 30px;
+}
+
+.board-main {
+  background-image: url("./img/centerscroll.png");
+  height: 714px;
+  width: 408px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 140px 45px 0 45px;
+}
+
+.board-main h2 {
+  font-family: "Friz Quadrata Std", sans-serif;
+  color: #ebcb93;
+}
+
+.board-main p {
+  font-family: "Friz Quadrata Std", sans-serif;
+  color: white;
+  overflow-y: hidden;
+}
+.board_text{
+  max-height: 170px;
+  min-height: 170px;
+}
+
+.board-main input {
+  margin-left: -35px;
+  width: 380px;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-family: "Friz Quadrata Std", sans-serif;
+  color: white;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.name_input{
+  font-family: "Friz Quadrata Std", sans-serif;
+  font-size: 30px;
+  padding: 0px;
+  margin: auto;
+}
+
+.board-item {
+  background-image: url("./img/classiconsquare.png");
+  height: 150px;
+  width: 143px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.board-item p {
+  font-family: "Friz Quadrata Std", sans-serif;
+  color: white;
+  margin-top: 70px;
+}
+
+.board-item img {
+  width: 60px;
+  height: 40px;
+}
+
+.board-change {
+  margin: 20px auto;
+  width: 180px;
+  height: 122px;
+}
+
+.board-change img {
+  width: 180;
+  height: 122px;
+}
+
+.corner {
+  background-image: url("./img/reservebutton.png");
+  /* height: 129px; */
+  width: 267px;
+  text-align: center;
+  margin: 40px auto;
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+.corner #eth {
+  font-family: "Friz Quadrata Std", sans-serif;
+  color: #ffdc9e;
+  font-size: 25px;
+  letter-spacing: 4px;
+}
+
+.corner p {
+  font-family: "Friz Quadrata Std", sans-serif;
+  color: #ffdc9e;
+  margin: 0;
+}
+
+.button-items {
+  background-image: url("./img/vectorline-2.png");
+  width: 100%;
+  height: 216px;
+  display: flex;
+  align-items: center;
+  margin-top: 34px;
+  padding: 0 70px;
+  justify-content: space-evenly;
+}
+
+.button-item {
+  margin: 0 20px;
+  font-family: "Friz Quadrata Std", sans-serif;
+  text-align: center;
+}
+
+.button-item p {
+  font-size: 30px;
+  color: #ffdc9e;
+  margin: 0;
+}
+
+.button-item span {
+  font-size: 30px;
+  color: white;
+}
+
+/* Here is marketplace style*/
+.marketplace {
+  margin-top: 185px;
+  background-image: url("./img/craftingbackground.png");
+  width: 100%;
+  height: 1050px;
+  padding: 100px 0px;
+  text-align: center;
+  font-family: "Friz Quadrata Std", sans-serif;
+}
+
+.marketplace span {
+  color: #c2a694;
+}
+
+.marketplace p {
+  color: grey;
+}
+
+.marketplace h2 {
+  color: #c2a694;
+}
+
+.market-items {
+  display: flex;
+  padding: 0 100px;
+  justify-content: space-evenly;
+}
+
+.market-item p {
+  margin-top: 30px;
+  color: #b2966e;
+}
+.market-item img{
+  width: 200px;
+}
+.dozens-knifes {
+  display: flex;
+}
+
+.dozens-knifes img{
+  width: 450px;
+}
+
+.knife-left {
+  margin-left: 200px;
+}
+
+.knife-right {
+  margin-right: 200px;
+}
+
+/* Here is Character style */
+.charactersheet {
+  margin-top: -70px;
+  background-image: url("./img/character-back.png");
+  height: 1100px;
+  text-align: center;
+  font-family: "Friz Quadrata Std", sans-serif;
+  padding: 120px 0;
+}
+
+.charactersheet p {
+  color: white;
+}
+
+.charactersheet h2 {
+  color: white;
+  font-size: 45px;
+}
+
+.charactersheet span {
+  color: #b2966e;
+}
+
+.charactersheet-body {
+  position: relative;
+  justify-content: center;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.character-size1 {
+  width: 331px;
+}
+
+.content {
+  padding-top: 0px;
+  font-family: "Friz Quadrata Std", sans-serif;
+}
+
+.content h2 {
+  font-size: 25px;
+  color: #b2966e;
+}
+
+.content1 p {
+  text-align: left;
+}
+
+/* Here is whitepaper style */
+.whitepaper {
+  text-align: center;
+  font-family: "Friz Quadrata Std", sans-serif;
+}
+.paper-content {
+  background-image: url("./img/bg-img.png");
+  width: 100%;
+  height: 930px;
+  margin-top: -20px;
+}
+
+.paper-title {
+  background-color: white;
+  width: 800px;
+  height: 600px;
+  margin: 100px auto;
+  padding: 70px;
+}
+
+.paper-title h2 {
+  font-size: 40px;
+}
+
+.paper-title img {
+  margin: 20px 0;
+}
+
+.paper-title p {
+  font-size: 21px;
+}
+
+.paper-title a {
+  cursor: pointer;
+}
+
+.paper-title a p {
+  text-decoration: underline;
+  color: black;
+}
+
+.paper-button {
+  border-radius: 30px !important;
+  border: none !important;
+  background-color: #b2966e !important;
+  margin: 25px 20px;
+  padding: 10px 20px !important;
+  cursor: pointer;
+}
+
+.rough {
+  margin-top: -12px;
+  width: 100%;
+  height: 16px;
+}
+
+.team {
+  background-image: url("./img/team-back.png");
+  width: 100%;
+  height: 800px;
+  font-family: "Friz Quadrata Std", sans-serif;
+  color: white;
+  margin-top: -100px;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.team h2 {
+  margin: 100px 0 20px 0;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.team-member {
+  margin: 50px;
+}
+
+.team-member img {
+  width: 250px;
+  height: 250px;
+}
+
+.team-member h3 {
+  margin-top: 40px;
+}
+
+/* Here is roadmap style */
+.inventory {
+  background-image: url("./img/lastbg.png");
+  width: 100%;
+}
+
+.roadmap {
+  width: 100%;
+  text-align: center;
+  margin-top: -20px;
+  padding-top: 0;
+  font-family: "Friz Quadrata Std", sans-serif;
+}
+
+.roadmap-content {
+  width: 100%;
+  height: 950px;
+  padding: 50px;
+}
+
+.roadmap-content h2 {
+  margin: 80px 0 20px 0;
+  font-size: 50px;
+}
+
+.roadmap-content img {
+  margin: 10px 0 40px 0;
+}
+
+.roadmap-content p {
+  font-size: 24px;
+}
+
+.roadmap-titles {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.roadmap-title h3 {
+  color: #b2966e;
+}
+
+.roadmap-title {
+  margin: 20px;
+}
+
+.contact-social {
+  height: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.socials {
+  margin-top: 500px;
+}
+
+.socials h2 {
+  color: white;
+  font-family: "Friz Quadrata Std", sans-serif;
+
+}
+
+.socials a {
+  color: #b2966e;
+  font-family: "Friz Quadrata Std", sans-serif;
+  margin: 20px;
+}
+
+.socials p {
+  color: rgb(129, 162, 253);
+  font-family: "Friz Quadrata Std", sans-serif;
+}
+
+@media (max-width: 1416px) {
+  .navbar a {
+    margin: 0 15px 0 15px;
+  }
+  .button-item p,
+  .button-item span {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .navbar a {
+    margin: 0 15px 0 15px;
+    font-size: 20px;
+  }
+  .wallet .wallet_connect{
+    font-size: 12px;
+  }
+
+  .button-item p,
+  .button-item span {
+    font-size: 25px;
+  }
+
+  .market-items img {
+    width: 150px;
+  }
+
+  .market-item {
+    margin: 15px;
+  }
+
+  .dozens-knifes img {
+    width: 350px;
+  }
+
+  .knife-left {
+    margin-left: 100px;
+  }
+
+  .knife-right {
+    margin-right: 100px;
+  }
+
+  .team {
+    height: 650px;
+  }
+
+  .team h2 {
+    margin: 60px 0 20px 0;
+  }
+
+  .divider {
+    height: 600px;
+  }
+
+  .team-member {
+    margin: 30px;
+  }
+
+  .team-member img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .roadmap {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1176px) {
+  .navbar {
+    height: 80px;
+  }
+  .navbar a {
+    margin: 0 12px;
+    font-size: 15px;
+  }
+  .wallet .wallet_connect{
+    font-size: 10px;
+  }
+
+  .navbar img {
+    width: 150px;
+  }
+  .wallet {
+    width: 150px;
+    height: 52px;
+    background-size: cover;
+  }
+
+  .button-items {
+    height: 150px;
+    background-size: cover;
+  }
+
+  .button-item p,
+  .button-item span {
+    font-size: 20px;
+  }
+
+  .dozens-knifes img {
+    width: 250px;
+  }
+
+  .marketplace {
+    height: 950px;
+  }
+
+  .paper-title {
+    background-color: white;
+    width: 650px;
+    height: 650px;
+    margin: 80px auto;
+    padding: 35px;
+  }
+
+  .charactersheet {
+    height: 800px;
+  }
+
+  .character-size1 {
+    width: 250px;
+    height: 454px;
+    font-size: 15px;
+  }
+
+  .character-size1 img {
+    margin-top: 20px;
+  }
+
+  .character-size1 h2 {
+    font-size: 20px;
+  }
+
+  .character-size2 {
+    width: 400px;
+    height: 480px;
+  }
+}
+
+@media (max-width: 1066px) {
+  .team {
+    height: 600px;
+  }
+  .divider {
+    height: 500px;
+  }
+
+  .team-member {
+    margin: 20px;
+  }
+
+  .team-member img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 900px) {
+  .roadmap p {
+    font-size: 20px;
+  }
+
+  .roadmap h2 {
+    font-size: 30px;
+    margin-top: 60px;
+  }
+
+  .character-size1 {
+    width: 200px;
+    height: 363px;
+    font-size: 12px;
+  }
+
+  .character-size2 {
+    width: 350px;
+    height: 420px;
+  }
+
+  .charactersheet {
+    height: 700px;
+  }
+
+  .charactersheet h2,
+  .charactersheet span {
+    font-size: 30px;
+  }
+
+  .character-size1 h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-center,
+  .wallet-buttons {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    background: transparent;
+    border: 1px solid #ebcb93;
+    border-radius: 5px;
+    color: #ebcb93;
+    font-size: 30px;
+    margin-right: 25px;
+  }
+
+  .sub-navbar {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    top: 80px;
+    border-bottom: 2px solid #ebcb93;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+  }
+
+  .sub-navbar a {
+    color: #ebcb93;
+    font-size: 20px;
+    font-family: "Friz Quadrata Std", sans-serif;
+  }
+
+  .market-items img {
+    width: 100px;
+  }
+
+  .market-item {
+    margin: 15px;
+  }
+
+  .dozens-knifes img {
+    width: 200px;
+  }
+
+  .character-size1 {
+    width: 160px;
+    height: 300px;
+    font-size: 10px;
+  }
+
+  .character-size2 {
+    width: 300px;
+    height: 360px;
+  }
+
+  .charactersheet {
+    height: 700px;
+  }
+
+  .charactersheet h2,
+  .charactersheet span {
+    font-size: 30px;
+  }
+
+  .character-size1 h2 {
+    font-size: 16px;
+  }
+
+  .paper-title {
+    background-color: white;
+    width: 500px;
+    height: 650px;
+    margin: 80px auto;
+    padding: 35px;
+  }
+
+  .team {
+    height: 500px;
+  }
+  .divider {
+    height: 400px;
+  }
+
+  .team-member {
+    margin: 15px;
+  }
+
+  .team-member img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .roadmap p {
+    font-size: 18px;
+  }
+
+  .roadmap h2 {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 414px) {
+  .menu-icon {
+    display: block;
+    background: transparent;
+    border: 1px solid #ebcb93;
+    border-radius: 5px;
+    color: #ebcb93;
+    font-size: 30px;
+    margin-right: 25px;
+  }
+
+  .board {
+    width: 370px;
+  }
+
+  .board-item {
+    width: 70px;
+    height: 85px;
+    background-size: cover;
+    padding-top: 20px;
+  }
+
+  .board-item img {
+    width: 35px;
+    height: 23px;
+  }
+
+  .board-item p {
+    margin-top: 37px;
+    font-size: 8px;
+  }
+
+  .board-main {
+    width: 230px;
+    height: 420px;
+    background-size: cover;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .board-main h2 {
+    margin: 50px 0 0 0;
+  }
+
+  .board-main p {
+    margin: 5px 0 5px 0;
+    font-size: 12px;
+    max-height: 140px;
+    overflow-y: hidden;
+    }
+    .board_text{
+      max-height: 140px;
+      min-height: 140px;
+    }
+    
+  .board-main input {
+    margin-left: -2px;
+    width: 220px;
+    height: 40px;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    text-align: center;
+  }
+  
+  .name_input{
+    font-size: 12px;
+  }
+  
+  .board-main img {
+    width: 100px;
+    height: 60px;
+  }
+
+  .board-change {
+    margin: 10px auto;
+    width: 90px;
+    height: 60px;
+  }
+
+  .corner {
+    /* height: 65px; */
+    width: 133px;
+    background-size: cover;
+    text-align: center;
+    margin: 20px auto;
+    padding-top: 7px;
+    cursor: pointer;
+  }
+
+  .corner #eth {
+    font-size: 12px;
+  }
+
+  .corner p {
+    font-size: 8px;
+    margin: 0 !important;
+  }
+
+  .button-items {
+    background-size: cover;
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px 30px;
+  }
+
+  .marketplace {
+    margin-top: 80px;
+    height: 700px;
+  }
+
+  .market-items {
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .market-items img {
+    width: 60px;
+  }
+
+  .market-item {
+    margin: 4px;
+  }
+
+  .dozens-knifes img {
+    width: 80px;
+  }
+
+  .charactersheet {
+    height: 500px;
+  }
+
+  .character-size {
+    width: 300px;
+  }
+
+  .charactersheet h2,
+  .charactersheet span {
+    font-size: 25px;
+  }
+
+  .paper-title {
+    background-color: white;
+    width: 300px;
+    height: 700px;
+    margin: 80px auto;
+    padding: 35px;
+  }
+
+  .paper-title img {
+    width: 250px;
+  }
+
+  .paper-title h2 {
+    font-size: 30px;
+  }
+
+  .paper-title p {
+    font-size: 20px;
+  }
+
+  .paper-content img {
+    width: 200px;
+  }
+
+  .team {
+    height: 500px;
+  }
+  .divider {
+    display: none;
+  }
+
+  .team-member {
+    margin: 5px;
+  }
+
+  .team-member img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .rough {
+    margin-top: -23px;
+    height: 5px;
+  }
+
+  .roadmap {
+    margin-top: 0px;
+  }
+
+  .roadmap-content img {
+    width: 300px;
+  }
+
+  .roadmap-titles {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  .roadmap-content p {
+    font-size: 15px;
+  }
+
+  .roadmap-titles br {
+    display: none;
+  }
+
+  .roadmap-title h3 {
+    color: #b2966e;
+    font-size: 15px;
+  }
+
+  .roadmap-title p {
+    font-size: 15px;
+  }
+
+  .roadmap-title {
+    margin: 20px;
+  }
+
+  .roadmap-content img {
+    width: 200px;
+  }
+
+  .contact-social {
+    height: 600px;
+  }
+
+  .socials {
+    margin-top: 50px;
+  }
+
+  .socials a {
+    display: block;
+  }
+
+  .character-size1 {
+    width: 80px;
+    height: 145px;
+    font-size: 5px;
+  }
+
+  .character-size2 {
+    width: 150px;
+    height: 180px;
+  }
+
+  .charactersheet {
+    height: 500px;
+  }
+
+  .character-size1 h2 {
+    font-size: 8px;
+  }
+
+  .marketplace img {
+    width: 300px;
+  }
+
+  .market-item img {
+    width: 50px;
+  }
+
+  .dozens-knifes img {
+    width: 70px;
+  }
+}
+
+@media (max-width: 360px) {
+  .board {
+    width: 300px;
+  }
+
+  .board-item {
+    width: 50px;
+    height: 60px;
+    background-size: cover;
+    padding-top: 15px;
+  }
+
+  .board-item img {
+    width: 25px;
+    height: 15px;
+  }
+
+  .board-item p {
+    margin-top: 25px;
+    font-size: 6px;
+  }
+
+  .board-main {
+    width: 200px;
+    height: 350px;
+    background-size: cover;
+    margin: 0;
+    padding: 0px 8px;
+  }
+
+  .board-main h2 {
+    margin: 50px 0 0 0;
+    font-size: 12px;
+  }
+
+  .board-main p {
+    margin: 5px 0 5px 0;
+    font-size: 10px;
+    overflow-y: hidden;
+  
+  }
+  .board_text{
+    max-height: 108px;
+    min-height: 108px;
+  }
+
+  .board-main input {
+    margin-left: -2px;
+    width: 180px;
+    height: 40px;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    text-align: center;
+  }
+  
+  .name_input{
+    font-size: 12px;
+  }
+
+  .corner {
+    height: 65px;
+    width: 120px;
+    text-align: center;
+    margin: 20px auto;
+    padding-top: 7px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .button-items {
+    padding: 80px 20px;
+  }
+
+  .marketplace img {
+    width: 250px;
+  }
+
+  .market-item img {
+    width: 50px;
+  }
+
+  .market-item p {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .dozens-knifes img {
+    width: 50px;
+  }
+
+  .team-member {
+    margin: 2px;
+  }
+
+  .roadmap-content {
+    padding: 30px;
+  }
+
+  .roadmap-title h3,
+  .roadmap-title p {
+    font-size: 13px;
+  }
+}
