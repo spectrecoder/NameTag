@@ -167,7 +167,7 @@ export default function () {
     const validate = async () => {
         if (!getWalletProvider()) {
             //   alert("Please connect metamask");
-            toast.error("Wallet is NOT Connected", {
+            toast.error("Wallet is not Connected", {
                 style: { background: "black" },
             });
             setLoading(false);
@@ -327,10 +327,6 @@ export default function () {
 
         toast.dark("File Uploading", { style: { background: "black" } });
 
-        // const element = await document.getElementById("upload_img");
-        // const canvas = await html2canvas(element);
-        // let data = canvas.toDataURL("image/jpg");
-
         srcToFile(data, imgName, "iamge/png")
             .then(function (file) {
                 var fd = new FormData();
@@ -379,15 +375,15 @@ export default function () {
                                 image:
                                     "https://gateway.pinata.cloud/ipfs/" +
                                     IpfsHash,
-                                "date":getCurrentTime(),
-                                attributes:[
+                                "date": getCurrentTime(),
+                                attributes: [
                                     {
                                         "trait_type": "Archetype",
-                                        "value":getCharacterProperties(characterId).Archetype
+                                        "value": getCharacterProperties(characterId).Archetype
                                     },
                                     {
                                         "trait_type": "Rarity",
-                                        "value":getCharacterProperties(characterId).Rarity
+                                        "value": getCharacterProperties(characterId).Rarity
                                     }
                                 ]
                             },
@@ -415,17 +411,13 @@ export default function () {
                                     style: { background: "black" },
                                 });
                                 mint(imgName, IpfsHash);
-                                // setLoading(false);
                                 handleClose();
-
-                                //handle response here
                             })
                             .catch(function (_error) {
                                 //handle error here
                                 setLoading(false);
                                 handleClose();
                             });
-                        // setLoading(false);
                     })
                     .catch(function (error) {
                         setLoading(false);
@@ -448,7 +440,7 @@ export default function () {
         // console.log(id)
         if (!getWalletProvider()) {
             //   alert("Please connect metamask");
-            toast.error("Wallet is NOT Connected", {
+            toast.error("Wallet is not Connected", {
                 style: { background: "black" },
             });
             // setLoading(false);
